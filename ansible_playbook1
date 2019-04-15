@@ -1,5 +1,4 @@
 ---
-  - hosts: test-server---
   - hosts: test-server
     become: true
     tasks:
