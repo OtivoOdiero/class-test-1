@@ -12,6 +12,14 @@ node {
         sh "ls -l"	
        
     }
+  
+      stage('Build docker image'){
+
+      sh "docker build -t webapp:v1 ."
+      sh "docker run -itd -P webapp:v1 "
+      sh "docker login"
+      }
+
 
       stage('Apply changes to the environment') {
 
