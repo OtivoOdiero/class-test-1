@@ -17,7 +17,6 @@ node {
       sh "docker login -u 'smbutha' -p 'Botha321' "
       sh "docker build -t webapp:v1 ."
       sh "docker run -itd -P webapp:v1 "
-      sh "docker login"
       }
 
 
