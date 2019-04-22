@@ -1,6 +1,6 @@
 
   
-node {
+node('Slave') {
 
     stage('Clone Repository')
     {
